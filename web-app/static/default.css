@@ -1,0 +1,128 @@
+/** Import **/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap");
+/** Import **/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap");
+html {
+  height: 100%;
+  width: 100%;
+  background: #909090; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff; }
+.column__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15vh; }
+
+/** Eingabe **/
+form {
+  width: 80%;
+  display: flex;
+  justify-content: center; 
+}
+  form input {
+    width: 40%;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 6px;
+    border: none;
+    padding: 0 5px; 
+    background: #141E30;
+    color: #62eca6;
+    font-size: 16px;
+  }
+  form button {
+    width: 10%;
+    margin-left: 10px;
+    border-radius: 6px;
+    border: 0;
+    color: #62eca6;
+    font-size: 16px;
+    background: #141E30;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400; 
+  }
+  form button:hover {
+    background: #303e56;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+/** Tabelle **/
+.t_head {
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0; }
+  .t_head li {
+    width: 70%;
+    background-color: #141E30;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid #303e56;
+    margin-top: 5px; }
+    .t_head li .secondContainer {
+      width: 50%; }
+  .t_head li:first-child {
+    margin-top: 30px; }
+
+/** Text **/
+h1, h2, h3 {
+  color: #141E30; 
+}
+
+h1:hover {
+  color: #fff;
+}
+/** Button **/
+select {
+  line-height: 35px;
+  height: 35px;
+  border: none;
+  background-color: #1c2535;
+  color: #fff;
+  padding: 0 10px; }
+
+.delete, .done {
+  margin-left: 10px;
+  height: 35px;
+  width: 30%;
+  border: none; }
+
+.delete {
+  background-color: #62eca6;
+  color: #141E30; }
+
+.done {
+  background-color: #1c2535;
+  color: #fff; }
+
+.hide {
+  text-decoration: line-through; }
+
+.firstContainer {
+  display: flex;
+  align-items: center; }
+  .firstContainer p {
+    padding-left: 10px; }
+
+span {
+  background-color: #fff;
+  height: 35px;
+  width: 10px;
+  display: inline-block;
+  border-radius: 2px; }
+.status {
+  display: none;
+}
+.done {
+  display: none;
+}

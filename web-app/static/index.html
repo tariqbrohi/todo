@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./default.css">
+    <script src="./main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="column__flex">
+        <h1>A TODO Application</h1>
+        <p>Add Things To Be Done</p>
+          <form action="/add" method="POST">
+            <input type="text" name="todo" id="js__input-text" placeholder="+ Add">
+            <button onclick="addList()" type="submit" id="addButton">Add</button>
+          </form>
+          <ul id="js__list" class="t_head">
+          </ul>
+       </div>
+</body>
+</html>
