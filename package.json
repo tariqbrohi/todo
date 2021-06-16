@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tariqbrohi/todo.git"
+    "url": "https://github.com/DE1-Computing-2-2021/computing-2-coursework-riyakataria77.git"
   },
   "author": "Riya",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tariqbrohi/todo/issues"
+    "url": "https://github.com/DE1-Computing-2-2021/computing-2-coursework-riyakataria77.git"
   },
-  "homepage": "https://github.com/tariqbrohi/todo#readme",
+  "homepage": "https://github.com/DE1-Computing-2-2021/computing-2-coursework-riyakataria77.git",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
