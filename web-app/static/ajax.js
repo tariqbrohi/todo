@@ -1,10 +1,7 @@
-const Ajax = Object.create(null);
-
-const fetch = window.fetch;
-
-const json = (response) => response.json();
-
-Ajax.query = function (requestObj) {
+var Ajax = Object.create(null);
+var fetch = window.fetch;
+var json = (response) => response.json();
+Ajax.ADD = function (requestObj) {
     const body = JSON.stringify(requestObj);
     return fetch("/add", {
         "method": "POST",
@@ -15,4 +12,23 @@ Ajax.query = function (requestObj) {
     }).then(json);
 };
 
+Ajax.getTODO = function () {
+    return fetch("/getTodo", {
+        "method": "GET",
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }).then(json);
+}
+
+Ajax.del = function (todo) {
+    const body = JSON.stringify(todo);
+    return fetch("/delTodo", {
+        "method": "POST",
+        "body": body,
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }).then(json);
+};
 export default Object.freeze(Ajax);

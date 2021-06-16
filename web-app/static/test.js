@@ -3,7 +3,7 @@
 import Ajax from "./ajax.js";
 
 // Get references to the html elements that we are going to be manipulating.
-const input_pane = document.getElementById("input_pane");
+var input_pane = document.getElementById("input_pane");
 const send_json_pane = document.getElementById("send_json_pane");
 const received_json_pane = document.getElementById("received_json_pane");
 const output_pane = document.getElementById("output_pane");

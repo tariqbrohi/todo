@@ -1,9 +1,9 @@
-const express = require('express')
-const path = require('path');
-const port = 8080;
-const app = express();
-const fs = require('fs');
-const bodyParser = require('body-parser');
+var express = require('express');
+var path = require('path');
+var port = 8080;
+var app = express();
+var fs = require('fs');
+var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('web-app/static'));
 var data = [];
@@ -11,7 +11,7 @@ var start = true;
 app.get("/getTodo", (req, res) => {
     data = [];
     var dat = fs.readFileSync('./web-app/static/store.json', 'utf8');
-    let todos = JSON.parse(dat);
+    var todos = JSON.parse(dat);
     for (let i = 0; i < todos.length; i++) {
         data.push(todos[i]);
     }
@@ -34,7 +34,7 @@ app.post('/delTodo', (req, res) => {
     let todo = req.body;
     for (let i = 0; i < data.length; i++) {
         if (data[i]["todo"] === todo) {
-            data[i] = {};
+            data.splice(i,1);
             break;
         }
     }
